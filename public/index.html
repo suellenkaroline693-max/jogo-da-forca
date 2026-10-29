@@ -7,15 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Jogo da Forca</h1>
-    <p id="dica"></p>
+  <main class="cartao">
+    <h1>🎯 Jogo da Forca</h1>
+    <p id="dica" class="dica"></p>
+
+    <svg id="boneco" viewBox="0 0 200 220" aria-label="Desenho da forca">
+      <line class="base" x1="20" y1="210" x2="180" y2="210"/>
+      <line class="base" x1="60" y1="210" x2="60" y2="20"/>
+      <line class="base" x1="60" y1="20" x2="140" y2="20"/>
+      <line class="base" x1="140" y1="20" x2="140" y2="45"/>
+      <circle id="parte-1" class="parte" cx="140" cy="62" r="17"/>
+      <line id="parte-2" class="parte" x1="140" y1="79" x2="140" y2="130"/>
+      <line id="parte-3" class="parte" x1="140" y1="90" x2="115" y2="115"/>
+      <line id="parte-4" class="parte" x1="140" y1="90" x2="165" y2="115"/>
+      <line id="parte-5" class="parte" x1="140" y1="130" x2="118" y2="165"/>
+      <line id="parte-6" class="parte" x1="140" y1="130" x2="162" y2="165"/>
+    </svg>
+
     <p id="palavra" class="palavra"></p>
-    <p>Erros: <span id="erros">0</span> / 6</p>
-    <p id="mensagem"></p>
+    <p class="erros">Erros: <span id="erros">0</span> / 6</p>
+    <p id="mensagem" class="mensagem"></p>
     <div id="teclado"></div>
-    <button id="reiniciar">Novo jogo</button>
+    <button id="reiniciar">🔄 Novo jogo</button>
   </main>
+  <div id="confete"></div>
   <script src="script.js"></script>
 </body>
 </html>
