@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f8; }
+main { max-width: 600px; margin: 40px auto; }
+.palavra { font-size: 2rem; letter-spacing: 0.5rem; }
+#teclado button { margin: 3px; padding: 10px 14px; font-size: 1rem; cursor: pointer; }
+#teclado button:disabled { opacity: 0.4; cursor: not-allowed; }
+#reiniciar { margin-top: 20px; padding: 10px 20px; }
+#mensagem { font-weight: bold; min-height: 1.5em; }
